@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "media": "bash scripts/generate-media.sh",
+    "seed": "node src/seed.js --reset"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.5",
+    "helmet": "^8.3.0",
+    "ws": "^8.23.0",
+    "zod": "^4.6.7"
+  },
+  "type": "module"
+}
